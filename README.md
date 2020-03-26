@@ -1,2 +1,0 @@
-# AMELLA-SUN-
-Redisigned AmellaNEW
