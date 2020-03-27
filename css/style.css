@@ -8,10 +8,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.616);
+  background: rgba(41, 41, 41, 0.616);
   -webkit-backdrop-filter: 20px;
           backdrop-filter: 20px;
   height: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,30 +25,45 @@
 
 .light-dot {
   position: absolute;
-  top: 750px;
-  left: 200px;
-  width: 40px;
-  height: 40px;
-  background: #c41720;
+  top: 100px;
+  left: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url(/pics/dotes.svg);
+  -webkit-animation: lightning 2s ease-in-out alternate infinite;
+          animation: lightning 2s ease-in-out alternate infinite;
+}
+
+.light-dot2 {
+  position: absolute;
+  top: 600px;
+  left: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url(/pics/dotes2.svg);
   -webkit-animation: lightning 1s ease-in-out alternate infinite;
           animation: lightning 1s ease-in-out alternate infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @-webkit-keyframes lightning {
   from {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   to {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
 @keyframes lightning {
   from {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   to {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
@@ -60,8 +79,8 @@
   background: black 0, 0, 0;
   -webkit-clip-path: polygon(820px 0, 820px 100px, 640px 100px, 640px 1080px, 0px 1080px, 0px 0px);
           clip-path: polygon(820px 0, 820px 100px, 640px 100px, 640px 1080px, 0px 1080px, 0px 0px);
-  -webkit-backdrop-filter: blur(33px);
-          backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .layer-1 .general-content-box .navbar {
@@ -263,7 +282,7 @@
   letter-spacing: 1px;
 }
 
-.layer-1 .general-content-box .knopka {
+.layer-1 .general-content-box .for-more-button {
   margin-top: 120px;
   margin-left: 44px;
   display: -webkit-box;
@@ -271,14 +290,14 @@
   display: flex;
 }
 
-.layer-1 .general-content-box .knopka .probel {
+.layer-1 .general-content-box .for-more-button .probel {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 360px;
           flex: 0 1 360px;
   height: 50px;
 }
 
-.layer-1 .general-content-box .knopka .button-more {
+.layer-1 .general-content-box .for-more-button .button-more {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +310,7 @@
   letter-spacing: 1.5px;
 }
 
-.layer-1 .general-content-box .knopka .button-more::before {
+.layer-1 .general-content-box .for-more-button .button-more::before {
   position: absolute;
   content: "";
   width: 98px;
@@ -301,8 +320,43 @@
   background: white;
 }
 
-.layer-1 .general-content-box .knopka .button-more img {
+.layer-1 .general-content-box .for-more-button .button-more img {
   float: left;
   margin-right: 10px;
+}
+
+.layer-1 .general-content-box .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.layer-1 .general-content-box .social-media-icons .probel {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 175px;
+          flex: 0 1 175px;
+}
+
+.layer-1 .general-content-box .social-media-icons .media-icon {
+  margin-right: 26px;
+}
+
+.layer-1 .general-content-box .social-media-icons .media-icon a {
+  outline: none;
+}
+
+.layer-1 .general-content-box .social-media-icons .media-icon img {
+  opacity: 0.5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.layer-1 .general-content-box .social-media-icons .media-icon:hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */

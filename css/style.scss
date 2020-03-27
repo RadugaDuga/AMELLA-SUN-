@@ -1,19 +1,22 @@
+//Миксин с шрифтами
 @mixin yanone {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 @mixin barlow{
     font-family: 'Barlow', sans-serif;
 }
+//
 
-
-
+//Миксин настроек текста для ссылок в менб навигации 
 @mixin navbar-font-set{
     @include barlow;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 2px;
 }
+//
 
+//Миксин настроек анимации подчеркивания кнопок навигации 
 @mixin navbar-link-set{
     position: relative;
     color:white;
@@ -33,6 +36,8 @@
         left:0;
     }
 }
+//
+
 
 
 *{
@@ -50,57 +55,127 @@
 
 
 
-
+//Настройки внешности скрола страницы 
 ::-webkit-scrollbar {
     width: 10px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background:rgba(255, 255, 255, 0.616);
+    background:rgba(41, 41, 41, 0.616);
     backdrop-filter: 20px;
     height: 20px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    
+    background: white;
   }
   ::-webkit-scrollbar-track {
     height: 20px;
     background: black;
   }
-  
+//
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin dot {
+    position: absolute;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    animation: lightning 1s ease-in-out alternate infinite;
+}
 
 .light-dot{
     position: absolute;
-    top:750px;
-    left:200px;
-    width:40px;
-    height:40px;
-    background:rgb(196, 23, 32);
-    animation: lightning 1s ease-in-out alternate infinite;
+    top:100px;
+    left:400px;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    background:url(/pics/dotes.svg);
+    animation: lightning 2s ease-in-out alternate infinite;
 }
+.light-dot2{
+    position: absolute;
+    top:600px;
+    left:400px;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    background:url(/pics/dotes2.svg);
+    animation: lightning 1s ease-in-out alternate infinite;
+    transform:rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes lightning {
     from{
        
-        opacity: 0.5;
+        opacity: 0.3;
     }
     to{
-        opacity:1;
+        opacity:0.5;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -130,7 +205,7 @@
         height:100%;
         background:rgb(0, 0, 0)(0, 0, 0);
         clip-path: polygon(820px 0, 820px 100px, 640px 100px, 640px 1080px, 0px 1080px , 0px 0px );
-        backdrop-filter: blur(33px);
+        backdrop-filter: blur(20px);
 
 
 
@@ -147,15 +222,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+// Навигация с кнопками и ссылками 
 
         .navbar{
             padding-top:42px;
@@ -213,6 +280,7 @@
                 }
             }
         }
+//
 
 
 
@@ -228,31 +296,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Большой заглавный текст 
         .title-content {
             margin-top:263px;
             padding-left:50px;
@@ -301,11 +345,25 @@
                 }
             }
         }
-        
+//
         
 
 
-        .knopka{
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Кнопка узнать больше 
+        .for-more-button{
             margin-top: 120px;
             margin-left: 44px;
             display: flex;
@@ -337,7 +395,49 @@
                 }
             }
         }
+//
 
+
+
+
+
+
+
+
+
+
+
+
+
+        .social-media-icons {
+            display: flex;
+            margin-top: 80px;
+
+            .probel{
+                flex:0 1 175px;
+            }
+
+            .media-icon {
+                margin-right: 26px;
+
+                a{
+                    outline: none;
+                }
+
+                img{
+                    opacity: 0.5;
+                    transform: scale(1.05);
+                    transition: 0.3s;
+                }
+
+                &:hover img{
+                    opacity: 1;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+        
    }
 
 }
