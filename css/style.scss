@@ -1,444 +1,164 @@
 //Миксин с шрифтами
-@mixin yanone {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
 }
-@mixin barlow{
-    font-family: 'Barlow', sans-serif;
+
+@mixin centered{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-left:15px;
+    margin-top:19px;
 }
-//
-
-//Миксин настроек текста для ссылок в менб навигации 
-@mixin navbar-font-set{
-    @include barlow;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-//
-
-//Миксин настроек анимации подчеркивания кнопок навигации 
-@mixin navbar-link-set{
-    position: relative;
-    color:white;
-    text-decoration: none;
-    &::before{
-        position: absolute;
-        right:0;
-        bottom:-5px;
-        content:"";
-        width:0%;
-        height:2px;
-        background:white;
-        transition: 0.3s ease-in-out ;
-    }
-    &:hover::before{
-        width:100%;
-        left:0;
-    }
-}
-//
-
-
 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-//Настройки внешности скрола страницы 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background:rgba(41, 41, 41, 0.616);
-    backdrop-filter: 20px;
-    height: 20px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: white;
-  }
-  ::-webkit-scrollbar-track {
-    height: 20px;
-    background: black;
-  }
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@mixin dot {
-    position: absolute;
-    width:35px;
-    height:35px;
-    border-radius: 50%;
-    animation: lightning 1s ease-in-out alternate infinite;
+body{
+    background: #DFECFC;
 }
 
-.light-dot{
-    position: absolute;
-    top:100px;
-    left:400px;
-    width:300px;
-    height:300px;
-    border-radius: 50%;
-    background:url(/pics/dotes.svg);
-    animation: lightning 2s ease-in-out alternate infinite;
-}
-.light-dot2{
-    position: absolute;
-    top:600px;
-    left:400px;
-    width:300px;
-    height:300px;
-    border-radius: 50%;
-    background:url(/pics/dotes2.svg);
-    animation: lightning 1s ease-in-out alternate infinite;
-    transform:rotate(45deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes lightning {
-    from{
-       
-        opacity: 0.3;
-    }
-    to{
-        opacity:0.5;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.layer-1{
+.global-container{
+    height:100%;
     width:100%;
-    height:1080px;
-    background:url(../pics/fon.png) center ;
-    
-    
-
-   .general-content-box{
-        max-width:820px;
-        height:100%;
-        background:rgb(0, 0, 0)(0, 0, 0);
-        clip-path: polygon(820px 0, 820px 100px, 640px 100px, 640px 1080px, 0px 1080px , 0px 0px );
-        backdrop-filter: blur(20px);
 
 
+    .navbar {
+        margin-left:82px;
+        margin-right: 82px;
+        margin-top: 97px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        max-width: 1756px;
+        height: 60px;
+        
 
+        &__logo {
+            flex:0 0 60px;
+            width:60px;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Навигация с кнопками и ссылками 
-
-        .navbar{
-            padding-top:42px;
-            max-width:820px;
-            height:100px;
+        &__menu {
+            
             display: flex;
+            flex:0 1 563px;
             flex-direction: row;
-            color:white;
-           
+            justify-content: space-between;
+            height:60px;
+            align-items: center;
+            @include roboto;
+            font-size: 18px;
+            letter-spacing: 0.045em;
+            color: #6F767E;
+            
+        }
 
-            .logo{
-                position: relative;
-                top:-5px;
-                margin-left:50px;
-                flex:0;
-                flex-basis:83px;
-                line-height: 86%;
-                letter-spacing: 2px;
-                @include yanone;
-                font-weight: bold;
-                font-size: 36px;
+            &__menu-element {
+            
+                
                 
             }
+            
 
-
-
-            .probel{
-                flex:0 2 278px;
-            }
-
-
-
-            .info{
-                flex:0 0.5 111px;
-                @include navbar-font-set;
-
-                a{  
-                    @include navbar-link-set;
-                }
-            }
-            .portpholio{
-                flex:0 0.5 173px;
-                @include navbar-font-set;
-
-                a{  
-                    @include navbar-link-set;
-                }
-            }
-            .aboutme{
-                flex:0 0.5 126px;
-                @include navbar-font-set;
-
-                a{  
-                    @include navbar-link-set;
-                }
-            }
+        &__autorization {
+            height:max-content;
+            @include roboto;
+            font-size: 18px;
+            letter-spacing: 0.045em;
+            font-weight: bold;
+            color:black;
         }
-//
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Большой заглавный текст 
-        .title-content {
-            margin-top:263px;
-            padding-left:50px;
-            display:flex;
-            flex-direction: row;
-            height:285px;
-            color:white;
-            line-height: 2.65;
-
-            .text {
-                width:100px;
-                P{
-                    word-wrap: break-word;
-                    width:10px;
-                    @include barlow;
-                    font-size: 11px;
-                    line-height: 2.95;
-                }
-            }
-            .title-and-description {
-                border-left:8px solid rgba(255, 255, 255, 0.089);
-                padding-left:22px;
-                max-width:385px;
-                display: flex;
-                flex-direction: column;
-
-                h1{
-                    position: relative;
-                    top:-8px;
-                    flex:1;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight:400;
-                    font-size: 75.5px;
-                    line-height: 94%;
-                    word-wrap: break-word;
-                    letter-spacing:1px ;
-                }
-                h2{
-                    color: rgba(255, 255, 255, 0.788);
-                    height:50px;
-                    @include yanone;
-                    font-size:18px;
-                    font-weight: 300;
-                    line-height: 97.6%;
-                    letter-spacing: 1px ;
-                }
-            }
-        }
-//
         
 
+        .center-item{
+            width:951px;
+            height: 578px!important;
+            height:100%;
+            @include centered;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Кнопка узнать больше 
-        .for-more-button{
-            margin-top: 120px;
-            margin-left: 44px;
-            display: flex;
-            .probel{
-                flex:0 1 360px;
-                height:50px;
+            .amellasun{
+                
+                @include centered;
+                margin-left:-27px;
+                margin-top:-39px;
             }
-            .button-more{
-                position: relative;
-                display: flex;
-                align-items: center;
-                color:white;
-                @include yanone;
-                letter-spacing: 1.5px;
-                &::before{
-                    position: absolute;
-                    content: "";
-                    width:98px;
-                    top:35px;
-                    left:54px;
-                    height: 2px;
-                    background: white;
-
-                }
-
-                img{
-                    float:left;
-                    margin-right: 10px;
-                }
-            }
+           
         }
-//
 
+    .local-footer {
+        width:968px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color:rgb(158, 164, 172);
+        @include centered;
+        top:86.7%;
+        margin:0;
+        
+        &__element {
+            @include roboto;
+            width:max-content;
+            letter-spacing: 0.018em;
+            font-weight: 500;
+            font-size: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-        .social-media-icons {
-            display: flex;
-            margin-top: 80px;
-
-            .probel{
-                flex:0 1 175px;
+            b{
+                color: black;
+                font-weight: 600;
+            }
+            p{
+                max-width: 359px;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 151.1%;
+                letter-spacing: 0.01em;
+                color:#4D5059;
+                margin-top:29px;
             }
 
-            .media-icon {
-                margin-right: 26px;
+            
+    }
+            
 
-                a{
-                    outline: none;
-                }
+    }
+    .section-title{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        color: #99A9C5;
+        padding-left: 461px;
+        padding-top:119px;
+    }
+    .left-svg{
+        bottom:0;
+        position: absolute;
+    }
+    .left-top-svg{
+        top:0;
+        position: absolute;
+    }
 
-                img{
-                    opacity: 0.5;
-                    transform: scale(1.05);
-                    transition: 0.3s;
-                }
-
-                &:hover img{
-                    opacity: 1;
-                    transform: scale(1.2);
-                }
-            }
-        }
-        
-        
-   }
-
+    .social-icons {
+        position: absolute;
+        right:80px;
+        bottom:175px;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        width: 82px;
+    }
+    .right-dots{
+        position: absolute;
+        top:279px;
+        right:42px;
+    }
+    
 }
-
