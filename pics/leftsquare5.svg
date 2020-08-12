@@ -1,13 +1,9 @@
-<svg width="255" height="239" viewBox="0 0 255 239" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="255" height="239">
-<rect width="255" height="239" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0)">
+<svg width="598" height="239" viewBox="0 0 598 239" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-235" y="0" width="547" height="547">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-235" y="0" width="547" height="547">
 <rect x="162.663" width="424.69" height="424.69" rx="15" transform="rotate(69.4491 162.663 0)" fill="#C4C4C4"/>
 </mask>
-<g mask="url(#mask1)">
+<g mask="url(#mask0)">
 <rect x="162.663" width="424.69" height="424.69" rx="15" transform="rotate(69.4491 162.663 0)" fill="#C4C4C4"/>
 <circle cx="228.309" cy="233.988" r="117.226" transform="rotate(69.4491 228.309 233.988)" fill="url(#paint0_linear)"/>
 <circle cx="132.945" cy="-41.4449" r="198.39" transform="rotate(69.4491 132.945 -41.4449)" fill="url(#paint1_linear)"/>
@@ -15,7 +11,6 @@
 <circle cx="-210.476" cy="212.32" r="198.39" transform="rotate(69.4491 -210.476 212.32)" fill="url(#paint3_linear)"/>
 <path d="M-24.5239 800.554C-161.694 851.979 -314.58 782.469 -366.004 645.299C-417.06 509.114 -373.854 323.62 -238.994 270.639C-237.073 269.884 -234.969 269.566 -232.908 269.68C-51.4847 279.651 79.6017 322.691 130.731 459.074C182.156 596.244 112.646 749.13 -24.5239 800.554Z" fill="url(#paint4_linear)"/>
 <path d="M147.365 421.618C123.943 430.399 89.5443 401.532 48.7913 377.095C17.0394 358.055 -31.6368 330.679 -43.3882 300.651C-66.0199 242.82 -64.7999 219.992 -76.9992 187.452C-105.236 112.133 25.4854 91.2985 58.2349 122.597C156.206 216.226 186.714 206.632 215.512 283.448C244.31 360.264 224.18 392.82 147.365 421.618Z" fill="url(#paint5_linear)"/>
-</g>
 </g>
 </g>
 <defs>

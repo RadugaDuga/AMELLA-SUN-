@@ -8,13 +8,35 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    margin-left:15px;
-    margin-top:19px;
 }
 
 *{
     box-sizing: border-box!important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
     background: #DFECFC;
@@ -54,7 +76,10 @@ body{
             font-size: 18px;
             letter-spacing: 0.045em;
             color: #6F767E;
-            
+            a{
+                text-decoration: none;
+                color:#6F767E;
+            }
         }
 
             &__menu-element {
@@ -77,16 +102,14 @@ body{
         
 
         .center-item{
-            width:951px;
-            height: 578px!important;
-            height:100%;
+            
             @include centered;
-
+            margin-top:1px;
             .amellasun{
                 
                 @include centered;
-                margin-left:-27px;
-                margin-top:-39px;
+                
+                margin-top:-59px;
             }
            
         }
@@ -158,7 +181,136 @@ body{
     .right-dots{
         position: absolute;
         top:279px;
-        right:42px;
+        right:82px;
     }
+    
+
+
+
+
+
+
+    // ? ЭТО ФЛЕКС КОНТЕЙНЕР С ЭЛЕМЕНТАМИ 
+
+    .collage-flex{
+        display: flex;
+        width:968px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__element{
+            margin-left:40px;
+        }
+        &__element:nth-child(1){
+            margin:0;
+        }
+    }
+
+    // ?_________________________________
+
+
+
+
+
+    
+    // ? ЭТО ОДИН ЕЛЕМЕНТ С ИЗОБРАЖЕНИЕМ ИЗ КОЛАЖА 
+    .image-wrapper{
+        width:212px;
+        overflow: hidden;
+        border-radius: 43px;
+        position: relative;
+    }
+    .tumbler{
+        position: absolute;
+        width:212px;
+        height:106px;
+        background:rgba(0, 0, 0, 0.192);
+        bottom:0;
+        transition: 0.3s;
+        transform: translateY(106px);
+        border-radius: 43px;
+
+        .suka{
+            backdrop-filter: blur(15px);
+            height:100%;
+            width:100%;
+            border-radius: 43px;
+        }
+
+        h1{
+            color:white;
+            @include roboto;
+            padding-top:25px;
+            padding-left:25px;
+            font-size: 17px;
+        }
+        p{
+            padding-top:9px;
+            padding-left:25px;
+            font-size: 15px;
+            color:#ffffffa9;
+            @include roboto;
+        }
+    }
+    .image-wrapper:hover .tumbler{
+        transform:translateY(0px);
+    }
+
+// ?__________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 }
