@@ -255,10 +255,14 @@ body{
         }
 
         h1{
+            overflow:hidden;
+            width:212px;
+            height: 42px;
             color:white;
             @include roboto;
             padding-top:25px;
             padding-left:30px;
+            padding-right: 30px;
             font-size: 17px;
         }
         p{

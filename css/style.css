@@ -264,10 +264,14 @@ body {
 }
 
 .global-container .tumbler h1 {
+  overflow: hidden;
+  width: 212px;
+  height: 42px;
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-top: 25px;
   padding-left: 30px;
+  padding-right: 30px;
   font-size: 17px;
 }
 
