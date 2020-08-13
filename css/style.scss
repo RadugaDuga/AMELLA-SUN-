@@ -14,6 +14,10 @@
     box-sizing: border-box!important;
 }
 
+a{
+    text-decoration: none;
+    outline: none!important;
+}
 
 
 
@@ -81,12 +85,6 @@ body{
                 color:#6F767E;
             }
         }
-
-            &__menu-element {
-            
-                
-                
-            }
             
 
         &__autorization {
@@ -160,6 +158,8 @@ body{
         padding-left: 461px;
         padding-top:119px;
     }
+
+
     .left-svg{
         bottom:0;
         position: absolute;
@@ -168,6 +168,17 @@ body{
         top:0;
         position: absolute;
     }
+    .right-svg{
+        bottom:0;
+        right:0;
+        position: absolute;
+    }
+    .right-top-svg{
+        top:0;
+        right:0;
+        position: absolute;
+    }
+
 
     .social-icons {
         position: absolute;
@@ -230,26 +241,29 @@ body{
         transform: translateY(106px);
         border-radius: 43px;
 
-        .suka{
+        .filter{
             backdrop-filter: blur(15px);
             height:100%;
             width:100%;
             border-radius: 43px;
+        }
+        a{
+            color:white;
+            @include roboto;
+            font-size: 17px;
+            text-decoration: none;
         }
 
         h1{
             color:white;
             @include roboto;
             padding-top:25px;
-            padding-left:25px;
+            padding-left:30px;
             font-size: 17px;
         }
         p{
             padding-top:9px;
-            padding-left:25px;
-            font-size: 15px;
-            color:#ffffffa9;
-            @include roboto;
+            text-align: center;
         }
     }
     .image-wrapper:hover .tumbler{
@@ -258,7 +272,13 @@ body{
 
 // ?__________________________________________________
 
-
+.svgshka{
+    fill-opacity:0.55;
+    transition:0.2s;
+}
+.svgshka:hover{
+    fill-opacity:1;
+}
 
 
 

@@ -3,6 +3,11 @@
           box-sizing: border-box !important;
 }
 
+a {
+  text-decoration: none;
+  outline: none !important;
+}
+
 body {
   background: #DFECFC;
 }
@@ -167,6 +172,18 @@ body {
   position: absolute;
 }
 
+.global-container .right-svg {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.global-container .right-top-svg {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
 .global-container .social-icons {
   position: absolute;
   right: 80px;
@@ -231,7 +248,7 @@ body {
   border-radius: 43px;
 }
 
-.global-container .tumbler .suka {
+.global-container .tumbler .filter {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   height: 100%;
@@ -239,24 +256,38 @@ body {
   border-radius: 43px;
 }
 
+.global-container .tumbler a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+}
+
 .global-container .tumbler h1 {
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-top: 25px;
-  padding-left: 25px;
+  padding-left: 30px;
   font-size: 17px;
 }
 
 .global-container .tumbler p {
   padding-top: 9px;
-  padding-left: 25px;
-  font-size: 15px;
-  color: #ffffffa9;
-  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .global-container .image-wrapper:hover .tumbler {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+.global-container .svgshka {
+  fill-opacity: 0.55;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.global-container .svgshka:hover {
+  fill-opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
