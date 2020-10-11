@@ -95,6 +95,9 @@ body {
 }
 
 .global-container .center-item .amellasun {
+  background: url("pics/rubikon.svg");
+  width: 57vw;
+  height: 63vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,6 +105,7 @@ body {
           transform: translate(-50%, -50%);
   position: absolute;
   margin-top: -59px;
+  border: 2px solid red;
 }
 
 .global-container .local-footer {
