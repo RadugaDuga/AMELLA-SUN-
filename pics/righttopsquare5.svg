@@ -34,8 +34,8 @@
 <stop stop-color="#39F3FF"/>
 <stop offset="1" stop-color="#8836C4"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="586.007" y1="191.09" x2="-235.669" y2="0.00607566" gradientUnits="userSpaceOnUse">
-<stop stop-color="#34EB92"/>
+<linearGradient id="paint4_linear" x1="257.038" y1="89.22" x2="-121.689" y2="271.899" gradientUnits="userSpaceOnUse">
+<stop offset="0.0375265" stop-color="#34EB92"/>
 <stop offset="1" stop-color="#237FD0"/>
 </linearGradient>
 </defs>
