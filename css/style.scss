@@ -690,12 +690,27 @@ input[type='range']::-webkit-slider-thumb::after {
 .social-logos-container{
     transform: translateY(-1.4vmax);
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    border:2px solid red;
     width:32vmax;
-    background:url('lol.svg');
-    height:9.7vmax;
+    padding-left:0.5vmax;
+    padding-right:0.5vmax;
+    height:9.67vmax;
+    background: #CFE3FB;
+    border-radius: 75px;
+    box-shadow: inset 0px 0px 30px rgba(0, 42, 151, 0.12);
+
+    .social-logo{
+        width: 6.47vmax;
+        height:6.47vmax;
+        box-sizing: border-box;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
 }
 
 
