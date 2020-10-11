@@ -688,7 +688,16 @@ input[type='range']::-webkit-slider-thumb::after {
 
 
 
-
+.social-logos-container{
+    transform: translateY(-1.4vmax);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border:2px solid red;
+    width:32vmax;
+    background:url('lol.svg');
+    height:9.7vmax;
+}
 
 
 

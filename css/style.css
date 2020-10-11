@@ -682,6 +682,24 @@ body {
   z-index: -1;
 }
 
+.global-container .social-logos-container {
+  -webkit-transform: translateY(-1.4vmax);
+          transform: translateY(-1.4vmax);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid red;
+  width: 32vmax;
+  background: url("lol.svg");
+  height: 9.7vmax;
+}
+
 @media screen and (max-width: 1700px) {
   .global-container .local-footer__element {
     font-size: 19px;
