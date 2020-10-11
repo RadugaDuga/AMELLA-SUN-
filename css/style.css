@@ -131,7 +131,7 @@ body {
 }
 
 .global-container .local-footer__element {
-  font-size: 22px;
+  font-size: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -150,7 +150,7 @@ body {
 }
 
 .global-container .local-footer__element p {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: normal;
   line-height: 151.1%;
   letter-spacing: 0.01em;
