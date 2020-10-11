@@ -20,7 +20,7 @@
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
 </filter>
 <linearGradient id="paint0_linear" x1="0.000360464" y1="120.955" x2="30.9252" y2="59.0304" gradientUnits="userSpaceOnUse">
@@ -39,17 +39,17 @@
 <stop stop-color="#F52354"/>
 <stop offset="1" stop-color="#CC2749"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="22" y1="131.5" x2="29.5" y2="105" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint4_linear" x1="14.5" y1="146.5" x2="37.5" y2="88.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#34EB92"/>
 <stop offset="1" stop-color="#237FD0"/>
 </linearGradient>
-<linearGradient id="paint5_linear" x1="12.6896" y1="130.138" x2="-5.10326" y2="126" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint5_linear" x1="20.5" y1="137.5" x2="-5.10331" y2="126" gradientUnits="userSpaceOnUse">
 <stop stop-color="#34EB92"/>
 <stop offset="1" stop-color="#237FD0"/>
 </linearGradient>
-<linearGradient id="paint6_linear" x1="7.9999" y1="61.7273" x2="4.69184" y2="73.1479" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00D1FF"/>
-<stop offset="1" stop-color="#1B91FF"/>
+<linearGradient id="paint6_linear" x1="-11" y1="78.5" x2="16.5367" y2="72.8388" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9900"/>
+<stop offset="1" stop-color="#FFD600"/>
 </linearGradient>
 </defs>
 </svg>

@@ -109,13 +109,9 @@ width:100%;
         
         @include centered;
         .amellasun{
-            background: url('pics/rubikon.svg');
-            width:57vw;
-            height:63vh;
             @include centered;
             position: absolute;
             margin-top:-59px;
-            border:2px solid red;
         }
         
     }
