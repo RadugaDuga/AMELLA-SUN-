@@ -603,8 +603,8 @@ body {
           transform: translateX(-50%);
   width: 430px;
   padding-top: 96px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 28px;
   height: 165px;
   background: -webkit-gradient(linear, left top, right top, from(#FFA500), color-stop(139.51%, #FFD600));
@@ -956,7 +956,7 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 360px;
+    width: 436px;
     padding-top: 96px;
     padding-left: 40px;
     padding-right: 40px;
@@ -994,13 +994,14 @@ body {
   .global-container .yellow-block {
     position: absolute;
     left: 50%;
-    left: -28px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     bottom: -28px;
-    width: 610px;
+    width: 490px;
     height: 107px;
     border-radius: 0px 0px 75px 75px;
-    background: -webkit-gradient(linear, left top, right top, from(#ffb700), color-stop(69.7%, #FFD600), color-stop(69.7%, #DFECFC));
-    background: linear-gradient(90deg, #ffb700, #FFD600 69.7%, #DFECFC 69.7% 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ffb700), to(#FFD600));
+    background: linear-gradient(90deg, #ffb700, #FFD600);
     z-index: -1;
   }
   .global-container .blue-block {
