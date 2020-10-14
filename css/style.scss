@@ -56,15 +56,13 @@ font-size: 18px;
 }
 
 .wrapper{
-margin-top: 4vmax;
-margin-left:3.6vmax;
-margin-right:3.6vmax;
+    margin-top: 4vmax;
+    margin-left:3.6vmax;
+    margin-right:3.6vmax;
 }
 .global-container{
-height:100%;
-width:100%;
-
-
+    height:100%;
+    width:100%;
 .navbar {
     
     display: flex;
@@ -892,7 +890,7 @@ input[type='range']::-webkit-slider-thumb {
     .calculator-wrapper{
         border:8px solid #DFECFC;
         position: relative;
-        width:450px;
+        width:610px;
         margin:0 auto;
         margin-top:277px;
         border-radius: 55px;
@@ -916,21 +914,7 @@ input[type='range']::-webkit-slider-thumb {
     
     
     
-    .form-group_howmuch-input{
-        background: linear-gradient(160deg, #33b4ff , #3171D0);
-        border-radius:55px;
-        color:white;
-        @include roboto;
-        letter-spacing: 1px;
-        width:250px;
-        padding:30px;
-        padding-right: 95px;
-        position: absolute;
-        z-index: -2;
-        top:93px;
-        left:0;
-        transition: .3s ease-in;
-    }
+   
     
     .form-group_howmuch-input_activated{
         background: linear-gradient(160deg, #33b4ff , #3171D0);
@@ -1005,18 +989,7 @@ input[type='range']::-webkit-slider-thumb {
     .custom-range{
         width:100%;
     }
-    .radio-container{
-        flex-direction: column;
-        .radio-wrapper{
-            width:100%;
-            flex-wrap: wrap;
-        }
-        .radio-wrapper-right{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-    }
+    
 
     .info-wrapper {
         display: flex;
@@ -1069,7 +1042,7 @@ input[type='range']::-webkit-slider-thumb {
             left:50%;
             transform: translateX(-50%);
             bottom:-28px;
-            width:490px;
+            width:652px;
             height:107px;
             border-radius: 0px 0px 75px 75px ;
             background: linear-gradient(90deg, #ffb700 , #FFD600  );
@@ -1090,13 +1063,14 @@ input[type='range']::-webkit-slider-thumb {
             .radio-containers-wrapper{
                 width:100%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
             
             .radio-container{
-                flex:2;
                 display: flex;
                 flex-direction: column;
-            
+            .radio-container_right{
+                flex:1;
+            }
             .radio-buttons-title{
                 @include roboto;
                 margin-bottom: 15px;
@@ -1168,9 +1142,7 @@ input[type='range']::-webkit-slider-thumb {
             }
             }
             }
-            .radio-container_right{
-            display:flex;
-            }
+            
                 
                 
             }

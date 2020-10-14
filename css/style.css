@@ -795,7 +795,7 @@ body {
   .global-container .calculator-wrapper {
     border: 8px solid #DFECFC;
     position: relative;
-    width: 450px;
+    width: 610px;
     margin: 0 auto;
     margin-top: 277px;
     border-radius: 55px;
@@ -812,22 +812,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #FFFFFF;
-  }
-  .global-container .form-group_howmuch-input {
-    background: linear-gradient(160deg, #33b4ff, #3171D0);
-    border-radius: 55px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    width: 250px;
-    padding: 30px;
-    padding-right: 95px;
-    position: absolute;
-    z-index: -2;
-    top: 93px;
-    left: 0;
-    -webkit-transition: .3s ease-in;
-    transition: .3s ease-in;
   }
   .global-container .form-group_howmuch-input_activated {
     background: linear-gradient(160deg, #33b4ff, #3171D0);
@@ -893,27 +877,6 @@ body {
   .global-container .custom-range {
     width: 100%;
   }
-  .global-container .radio-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .global-container .radio-container .radio-wrapper {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .global-container .radio-container .radio-wrapper-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .global-container .info-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -971,7 +934,7 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     bottom: -28px;
-    width: 490px;
+    width: 652px;
     height: 107px;
     border-radius: 0px 0px 75px 75px;
     background: -webkit-gradient(linear, left top, right top, from(#ffb700), to(#FFD600));
@@ -994,15 +957,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .global-container .radio-containers-wrapper .radio-container {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1010,6 +970,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .global-container .radio-containers-wrapper .radio-container .radio-container_right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .global-container .radio-containers-wrapper .radio-container .radio-buttons-title {
     font-family: 'Roboto', sans-serif;
@@ -1083,11 +1048,6 @@ body {
     -webkit-transition: .6s;
     transition: .6s;
     opacity: 1;
-  }
-  .global-container .radio-containers-wrapper .radio-container_right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
