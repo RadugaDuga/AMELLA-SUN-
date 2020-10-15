@@ -208,36 +208,78 @@ font-size: 18px;
         width:calc(9.5vmax + 102px);
     }
 }
-.social-icons {
-    position: absolute;
-    right:80px;
-    bottom:175px;
-    flex-direction: row;
-    justify-content: space-between;
+
+
+.center-item-what{
+    @include centered;
+    width:810px;
+}
+
+//? ___________ЭТО КОНТЕЙНЕР С ЛОГОТИПАМИ СОЦ СЕТЕЙ___________ 
+
+
+.social-logos-container{
+    width:max-content;
+    position: relative;
     display: flex;
-    width: 82px;
-}
-.right-dots{
-    position: absolute;
-    top:14vmax;
-    right:3.6vmax;
-    img{
-        width:calc(1vmax + 10px);
+    align-items: center;
+    flex-direction: row;
+    background: #CFE3FB;
+    border-radius: 75px;
+    box-shadow: inset 0px 0px 30px rgba(0, 42, 151, 0.12);
+    padding:1.5vmax;
+    margin:0 auto;
+
+    .social-logo{
+        img{
+            width:7vmax;
+            padding:0 0.5vmax;
+        }
     }
 }
-.left-dots{
-    position: absolute;
-    top:22vmax;
-    left:3.6vmax;
-    img{
-        width:calc(1vmax + 10px);
+
+//? __________________________________________________________    
+
+
+
+
+
+//? ________ЭТО ФЛЕКС КОНТЕЙНЕР СО СМАЙЛИКАМИ________ 
+
+
+
+.smiles-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    margin:0 auto;
+    margin-top: 20px;
+    width:max-content;
+    color:rgb(80, 80, 80);
+    @include roboto;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    &__title{
+        padding-left:0.4vmax;
+    }
+
+    &__smiles-container{
+    width:max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 75px;
+    margin:0 auto;
+    margin-top: 15px;
+        
+        img{
+            width:3.5vmax;
+            padding:0 0.4vmax;
+        }
     }
 }
-    
-
-
-
-
+//? _________________________________________________
 
 
 // ? ЭТО ФЛЕКС КОНТЕЙНЕР С ЭЛЕМЕНТАМИ 
@@ -489,7 +531,7 @@ margin-top:50%;
 //? ______________КАЛЬКУЛЯТОР__________________
 
 .calculator-wrapper{
-    border:8px solid #DFECFC;
+    border:5px solid #DFECFC;
     position: relative;
     width:610px;
     margin:0 auto;
@@ -665,7 +707,7 @@ input[type='range']::-webkit-slider-thumb {
     width:610px;
     height:107px;
     border-radius: 0px 0px 75px 75px ;
-    background: linear-gradient(90deg, #ffb700 , #FFD600 88.6%,   #DFECFC 88.6% 100%);
+    background: linear-gradient(90deg, #ffb700 , #FFD600 89.6%,   #DFECFC 89.6% 100%);
     z-index: -1;
 }
 
@@ -681,34 +723,6 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 
-
-
-
-.social-logos-container{
-    transform: translateY(-1.4vmax);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:32vmax;
-    padding-left:0.5vmax;
-    padding-right:0.5vmax;
-    height:9.67vmax;
-    background: #CFE3FB;
-    border-radius: 75px;
-    box-shadow: inset 0px 0px 30px rgba(0, 42, 151, 0.12);
-
-    .social-logo{
-        width: 6.47vmax;
-        height:6.47vmax;
-        box-sizing: border-box;
-        img{
-            width:100%;
-            height:100%;
-        }
-    }
-}
 
 
 
@@ -833,7 +847,7 @@ input[type='range']::-webkit-slider-thumb {
     }
     .navbar__logo{
         img{
-            width:6vmax!important;
+            width:3.5vmax!important;
         }
     }
 
