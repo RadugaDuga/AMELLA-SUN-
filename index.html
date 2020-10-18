@@ -20,43 +20,86 @@
 <body>
     
 <div id="fullPage">
-    <div class="section s5">   
-        <div class="global-container"> 
-            <div class="center-item-what">  
+    <div class="section s4">   
+        <div class="global-container">
+            <p class="section-title last-section-title">Price calculator</p>
 
-                <div class="social-logos-container">
-                    <div class="social-logo"><a href=""><img src="pics/element1.svg" alt=""></a></div>
-                    <div class="social-logo"><a href="#"><img src="pics/element2.svg" alt=""></a></div>
-                    <div class="social-logo"><a href="https://twitter.com/amelichevadaria"><img src="pics/element3.svg" alt=""></a></div>
-                    <div class="social-logo"><a href="https://vk.com/amelicheva.daria"><img src="pics/element4.svg" alt=""></a></div>
-                </div>   
-                <div class="smiles-wrapper">
-                    <h3 class="smiles-wrapper__title">Оцените мои работы __</h3>
-                    <div class="smiles-wrapper__smiles-container">
-                        <div><img src="pics/smile1.svg" alt=""></div>
-                        <div><img src="pics/smile2.svg" alt=""></div>
-                        <div><img src="pics/smile3.svg" alt=""></div>
-                        <div><img src="pics/smile4.svg" alt=""></div>
-                        <div><img src="pics/smile5.svg" alt=""></div>
-                        <div><img src="pics/smile6.svg" alt=""></div>
-                    </div>
+            <div class="center-item " style="width:100%;margin-top:-10%;">
+                <div class="calculator-wrapper">
+                        <div class="radio-containers-wrapper">
+                            <div class="radio-container">
+                                <h2 class="radio-buttons-title">Type of photoset</h2>
+                                <div class="radio-buttons">
+                                    <label class="radio-label">
+                                        <input type="radio" class="radio" id="kids" name="contact" value="">
+                                        <span class="fake-radio"></span>
+                                        <span class="radio-text">Kids photos</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" class="radio" id="one" name="contact" value="">
+                                        <span class="fake-radio"></span>
+                                        <span class="radio-text">One human</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" class="radio" id="family" name="contact" value="">
+                                        <span class="fake-radio"></span>
+                                        <span class="radio-text">For family</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" class="radio" id="love" name="contact" value="">
+                                        <span class="fake-radio"></span>
+                                        <span class="radio-text">Lovestory</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="radio-container radio-container_right">
+                                <h2 class=" radio-buttons-title radio-buttons-title_second">Photo area</h2>
+                                <div class="radio-buttons">
+                                    <label class="radio-label">
+                                        <input type="checkbox" class="radio" id="studio"  value="">
+                                        <span class="fake-radio"></span>
+                                        <span class="radio-text">Studio </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-title"><label class="title" for="range">Time - <span class="distanse">0</span>h</label></div>
+                            <div class="input-wrapper"><input type="range" class="custom-range" min="0" max="6" step="1" id="time" value="0"/></div>
+                        </div>  
+
+                        <div class="form-group">
+                            <div class="input-title"><label class="title" for="extra-photos"> <span>Extra Photos - </span> <span class="extras">0</span> Photos</label></div>
+                            <div class="input-wrapper"><input type="range" class="custom-range" min="0" max="30" step="5" id="extra-photos" value="0"/></div>
+                        </div>
+
+                        <div class="info-wrapper"> 
+                            <div class="info-wrapper__price-wrapper"><span class="price" id="out">0</span>.0₽</div>
+                            <div class="info-wrapper__svg-wrapper"><img src="pics/payment-systems.svg" alt=""></div>
+                        </div>  
+                        <div class="yellow-block"></div>
+                        <div class="blue-block"></div>
+                    </form>   
+                            <div class="form-group_howmuch-input">
+                                <div class="input-title"><label class="title" for="howmuch-input"> <span>How much people -</span> <span class="howmuch">3</span></label></div>
+                                <div class="input-wrapper"><input type="range" class="custom-range" min="3" max="8" step="1" id="howmuch-input" value="0"/></div>
+                            </div>  
                 </div>
 
+                    
             </div>
 
-            
-            
-
-            <div class="right-top-svg"><img src="pics/righttopsquare5.svg" alt=""></div>
+            <div class="left-top-svg"><img src="pics/lefttopsquare4.svg" alt=""></div>
+            <div class="right-svg"><img src="pics/rightsquare4.svg" alt=""></div>
         </div>
-        
     </div>
     <div class="section s1"> 
         <div class="global-container"> 
             <div class="wrapper">
                 <header>
                     <div class="navbar">
-                        <div class="navbar__logo"><img src="pics/ЛОГО.svg" alt="" style="width:4.5vmin;" ></div>
+                        <div class="navbar__logo"><a href="#"><img src="pics/ЛОГО.svg" alt="" ></a></div>
                         
                         <div class="navbar__autorization">Login</div>
                     </div>
@@ -71,7 +114,7 @@
                 <div class="local-footer" style="top:80wh;" >
                     <div class="local-footer__element">Perfect</div>
                     <div class="local-footer__element">Excelsior</div>
-                    <div class="local-footer__element" style="flex:2;text-align: left;">
+                    <div class="local-footer__element big-element" style="text-align: left;">
                         <b>About Me</b>
                         <p>Welcome, my name is Daria Amelicheva, I photograph and draw, you can see my works below. </p>
                     </div>
@@ -188,7 +231,7 @@
         </div>
 
         <div class="local-footer">
-            <div class="local-footer__element" style="flex:2;">
+            <div class="local-footer__element big-element">
                 <b>Photos for everyone</b>
                 <p>I will create a great photo shoot for you, process your photos and prepare 10 great photos.</p>
             </div>
@@ -309,12 +352,12 @@
         </div>
 
         <div class="local-footer">
-            <div class="local-footer__element" style="flex:2;">
+            <div class="local-footer__element ">Perfect</div>
+            <div class="local-footer__element">Excelsior</div>
+            <div class="local-footer__element big-element" style="flex:2;text-align: left;">
                 <b>My works </b>
                 <p>Beautiful artworks and illustrations, any idea is feasible, here are some of my paintings.</p>
             </div>
-            <div class="local-footer__element ">Perfect</div>
-            <div class="local-footer__element">Excelsior</div>
         </div>
 
 
@@ -323,81 +366,37 @@
 
     </div>
     </div>
-    <div class="section s4">   
-        <div class="global-container">
-            <p class="section-title last-section-title">Photoset calculator</p>
+    <div class="section s5">   
+        <div class="global-container"> 
+            <div class="center-item-what">  
 
-            <div class="center-item " style="width:100%;margin-top:-10%;">
-                <div class="calculator-wrapper">
-                        <div class="radio-containers-wrapper">
-                            <div class="radio-container">
-                                <h2 class="radio-buttons-title">Type of fotoset</h2>
-                                <div class="radio-buttons">
-                                    <label class="radio-label">
-                                        <input type="radio" class="radio" id="kids" name="contact" value="">
-                                        <span class="fake-radio"></span>
-                                        <span class="radio-text">Kids Photos</span>
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" class="radio" id="one" name="contact" value="">
-                                        <span class="fake-radio"></span>
-                                        <span class="radio-text">One human</span>
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" class="radio" id="family" name="contact" value="">
-                                        <span class="fake-radio"></span>
-                                        <span class="radio-text">For family</span>
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" class="radio" id="love" name="contact" value="">
-                                        <span class="fake-radio"></span>
-                                        <span class="radio-text">Lovestory</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="radio-container radio-container_right">
-                                <h2 class=" radio-buttons-title radio-buttons-title_second">Photo area</h2>
-                                <div class="radio-buttons">
-                                    <label class="radio-label">
-                                        <input type="checkbox" class="radio" id="studio"  value="">
-                                        <span class="fake-radio"></span>
-                                        <span class="radio-text">Studio </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="input-title"><label class="title" for="range">Time - <span class="distanse">0</span>h</label></div>
-                            <div class="input-wrapper"><input type="range" class="custom-range" min="0" max="6" step="1" id="time" value="0"/></div>
-                        </div>  
-
-                        <div class="form-group">
-                            <div class="input-title"><label class="title" for="extra-photos"> <span>Extra Photos - </span> <span class="extras">0</span> Photos</label></div>
-                            <div class="input-wrapper"><input type="range" class="custom-range" min="0" max="30" step="5" id="extra-photos" value="0"/></div>
-                        </div>
-
-                        <div class="info-wrapper"> 
-                            <div class="info-wrapper__price-wrapper"><span class="price" id="out">0</span>.0₽</div>
-                            <div class="info-wrapper__svg-wrapper"><img src="pics/payment-systems.svg" alt=""></div>
-                        </div>  
-                        <div class="yellow-block"></div>
-                        <div class="blue-block"></div>
-                    </form>   
-                            <div class="form-group_howmuch-input">
-                                <div class="input-title"><label class="title" for="howmuch-input"> <span>How many people -</span> <span class="howmuch">3</span></label></div>
-                                <div class="input-wrapper"><input type="range" class="custom-range" min="3" max="8" step="1" id="howmuch-input" value="0"/></div>
-                            </div>  
+                <div class="social-logos-container">
+                    <div class="social-logo"><a href=""><img src="pics/element1.svg" alt=""></a></div>
+                    <div class="social-logo"><a href="#"><img src="pics/element2.svg" alt=""></a></div>
+                    <div class="social-logo"><a href="https://twitter.com/amelichevadaria"><img src="pics/element3.svg" alt=""></a></div>
+                    <div class="social-logo"><a href="https://vk.com/amelicheva.daria"><img src="pics/element4.svg" alt=""></a></div>
+                </div>   
+                <div class="smiles-wrapper">
+                    <h3 class="smiles-wrapper__title">Оцените мои работы __</h3>
+                    <div class="smiles-wrapper__smiles-container">
+                        <div><img src="pics/smile1.svg" alt=""></div>
+                        <div><img src="pics/smile2.svg" alt=""></div>
+                        <div><img src="pics/smile3.svg" alt=""></div>
+                        <div><img src="pics/smile4.svg" alt=""></div>
+                        <div><img src="pics/smile5.svg" alt=""></div>
+                        <div><img src="pics/smile6.svg" alt=""></div>
+                    </div>
                 </div>
 
-                    
             </div>
 
-            <div class="left-top-svg"><img src="pics/lefttopsquare4.svg" alt=""></div>
-            <div class="right-svg"><img src="pics/rightsquare4.svg" alt=""></div>
+            
+            
+
+            <div class="right-top-svg"><img src="pics/righttopsquare5.svg" alt=""></div>
         </div>
+        
     </div>
-    
 </div>
 
 <script src="js/my.js"></script>
